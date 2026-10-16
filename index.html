@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Web Dissect</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-color: #2563eb;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        section {
+            margin-bottom: 1.75rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        p, ul {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background-color: rgba(37, 99, 235, 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy for Web Dissect</h1>
+            <p class="last-updated">Effective Date: October 16, 2026</p>
+        </header>
+
+        <section>
+            <h2>Overview</h2>
+            <p><strong>Web Dissect</strong> ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy outlines how our Chrome Extension operates and clarifies our strict stance on data privacy and security.</p>
+            <div class="highlight-box">
+                <p><strong>Summary:</strong> Web Dissect does not collect, track, store, or transmit any personal data or browsing history. All accessibility scans occur locally within your browser.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Information Collection and Use</h2>
+            <p>Web Dissect does <strong>not</strong> collect any personal information or usage statistics. Specifically:</p>
+            <ul>
+                <li><strong>No Analytics:</strong> We do not track how many times you use the extension or what pages you audit.</li>
+                <li><strong>No External Transmission:</strong> Audit reports and scan data are generated strictly on your local machine and are never transmitted to any external server or third party.</li>
+                <li><strong>No Personal Identifiers:</strong> We do not gather names, email addresses, IP addresses, or browser footprints.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How the Extension Operates</h2>
+            <p>To perform its core function as an accessibility checker, Web Dissect interacts with your active browser tab in the following manner:</p>
+            <ul>
+                <li><strong>Active Tab Scanning:</strong> When you initiate a scan, the extension injects a local instance of the open-source <code>axe-core</code> engine into the active page to evaluate its DOM against standard WCAG accessibility rules.</li>
+                <li><strong>Session Storage:</strong> Audit results are held temporarily in your browser's local session storage per tab so you can review them while the panel is open. This data disappears when the tab or session is closed.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Permissions Explained</h2>
+            <p>The extension requests specific permissions solely to provide its primary function:</p>
+            <ul>
+                <li><code>activeTab</code> / Host Permissions: Used strictly to run accessibility checks on the page you choose to audit.</li>
+                <li><code>scripting</code>: Used to inject the local <code>axe-core</code> testing script into the webpage during a scan.</li>
+                <li><code>sidePanel</code>: Used to display audit results alongside your active tab for easier review.</li>
+                <li><code>storage</code>: Used to preserve scan results locally in temporary browser session storage.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>Web Dissect does not use third-party tracking, analytics, advertising networks, or remote servers.</p>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect functional updates or regulatory changes. Any updates will be posted directly to this page.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy, feel free to open an issue or reach out via our official code repository:</p>
+            <p><a href="https://github.com/Deep0902/Chrome-Extension" target="_blank" rel="noopener noreferrer">Web Dissect GitHub Repository</a></p>
+        </section>
+
+        <footer>
+            &copy; 2026 Web Dissect. Built for privacy and accessibility.
+        </footer>
+    </div>
+</body>
+</html>
